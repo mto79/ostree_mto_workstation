@@ -1,0 +1,20 @@
+include: kde-desktop-pkgs.yaml
+ref: fedora/33/${basearch}/kinoite
+rojig:
+  name: fedora-kde
+  summary: "Fedora Kinoite (KDE) base image"
+  license: MIT
+packages:
+  # Wayland support
+  - kwayland-integration
+  - kwin-wayland
+  - plasma-workspace-wayland
+  - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal-kde
+  # Provide an archive manager by default
+  - ark
+
+repos:
+  - fedora-33
+  - fedora-33-updates

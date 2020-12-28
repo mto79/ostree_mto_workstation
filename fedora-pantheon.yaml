@@ -1,0 +1,11 @@
+include: pantheon-desktop-pkgs.yaml
+ref: fedora/33/${basearch}/pantheon
+rojig:
+  name: fedora-pantheon
+  summary: "Fedora Pantheon base image"
+  license: MIT
+packages:
+
+repos:
+  - fedora-33
+  - fedora-33-updates
