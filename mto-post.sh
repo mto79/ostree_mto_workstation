@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -xeuo pipefail
 
+# Install local RPMs
+rpm -i --verbose /usr/lib/local-rpms/*.rpm
+rm -rf /usr/lib/local-rpms
+
 # Enable SysRQ
 echo 'kernel.sysrq = 1' > /usr/lib/sysctl.d/90-sysrq.conf
 
@@ -81,7 +85,6 @@ mkdir -p /usr/lib/systemd/system/getty.target.wants
 ln -s ../getty@.service /usr/lib/systemd/system/getty.target.wants/getty@tty1.service
 ln -s ../systemd-timesyncd.service /usr/lib/systemd/system/sysinit.target.wants/systemd-timesyncd.service
 ln -s ../systemd-homed.service /usr/lib/systemd/system/multi-user.target.wants/systemd-homed.service
-ln -s ../cockpit.socket /usr/lib/systemd/system/sockets.target.wants/cockpit.socket
 ln -s ../sshd.socket /usr/lib/systemd/system/sockets.target.wants/sshd.socket
 
 # disable unwanted services
