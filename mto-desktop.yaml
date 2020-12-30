@@ -108,6 +108,8 @@ packages:
   - syncthing
   - krb5-workstation
   - time
+  - libappindicator-sharp
+  - mono-devel 
 
 # desktop plumbing/apps
   - dejavu-sans-fonts
