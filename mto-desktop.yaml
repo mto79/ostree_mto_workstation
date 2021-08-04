@@ -12,6 +12,8 @@ repos:
   - fedora-34-updates-testing
   - rpmfusion-free
   - rpmfusion-free-updates
+  - rpmfusion-nonfree
+  - rpmfusion-nonfree-updates
 
 packages:
 # hardware/drivers
@@ -29,6 +31,11 @@ packages:
   - wpa_supplicant
   - udisks2-lvm2
   - opensc
+    # nvidia
+  - akmod-nvidia
+  - xorg-x11-drv-nvidia
+  - xorg-x11-drv-nvidia-cuda
+
 # basic system
   - acl
   - attr
