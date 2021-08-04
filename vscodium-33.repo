@@ -1,7 +1,0 @@
-[vscodium]
-name=vscodium
-baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
-enabled=1
-gpgcheck=0
-repo_gpgcheck=0
-gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
