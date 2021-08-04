@@ -15,6 +15,6 @@ private key )
 cd ostree_mto_workstation
 sudo ./compose.sh
 
-ostree remote add workstation file:///var/home/mto/ostree_mto_workstation/repo --no-gpg-verify
-rpm-ostree rebase workstation:mto-desktop
+sudo ostree remote add mto-workstation file:///var/tmp/repo --no-gpg-verify
+sudo rpm-ostree rebase mto-workstation:mto-desktop
 
