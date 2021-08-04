@@ -122,26 +122,26 @@ packages:
   - gtimelog
 
 # sway/wayland desktop
-# - sway
-#  - swayidle
-#  - swaylock
-#  - kanshi
-#  - mako
-#  - waybar
-#  - slurp
-#  - grim
-#  - xorg-x11-server-Xwayland
-#  - firefox-wayland
-#  - wofi
-#  - brightnessctl
-#  - wl-clipboard
+  - sway
+  - swayidle
+  - swaylock
+  - kanshi
+  - mako
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - firefox-wayland
+  - wofi
+  - brightnessctl
+  - wl-clipboard
 
 exclude-packages:
 # recommended by sway
-#  - alacritty
-#  - brltty
-#  - glibc-all-langpacks
-#  - xdg-desktop-portal-wlr
+  - alacritty
+  - brltty
+  - glibc-all-langpacks
+  - xdg-desktop-portal-wlr
   # recommended by gtimelog
   - yelp
 
