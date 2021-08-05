@@ -144,6 +144,7 @@ packages:
   - lxrandr
   - lxappearance
   - libappindicator-gtk3
+  - libappindicator-sharp
   - gnome-disk-utility
   - gnome-keyring
 
