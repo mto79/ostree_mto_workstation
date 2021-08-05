@@ -16,7 +16,7 @@ repos:
   - rpmfusion-nonfree-updates
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
 
-  packages:
+packages:
 # hardware/drivers
   - kernel
   - kernel-modules-extra
