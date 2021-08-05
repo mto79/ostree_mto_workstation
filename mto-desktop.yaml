@@ -102,6 +102,7 @@ packages:
   - git
   - file
   - patchutils
+  - mono-devel
   - make
   - strace
   - wget
