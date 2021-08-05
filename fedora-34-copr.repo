@@ -1,6 +1,6 @@
 [copr:copr.fedorainfracloud.org:vladius:i3blocks]
 name=Copr repo for i3blocks owned by vladius
-baseurl=https://download.copr.fedorainfracloud.org/results/vladius/i3blocks/fedora-$releasever-$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/vladius/i3blocks/fedora-34-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
