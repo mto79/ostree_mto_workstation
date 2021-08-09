@@ -76,7 +76,8 @@ packages:
   - bzip2
   - zip
   - unzip
-  - vim-enhanced
+  - neovim 
+  - python3-neovim
   - ranger
   - bash-completion
   - fish
@@ -94,7 +95,8 @@ packages:
   - libguestfs-tools
   - vagrant-libvirt 
   - openvpn
-  - mutt
+  - dnf-plugins-core
+  - neomutt
   - nmap-ncat
   - isync
   - openssh-server
@@ -117,6 +119,7 @@ packages:
   - dejavu-sans-mono-fonts
   - fontawesome-fonts
   - google-noto-emoji-color-fonts
+  - jetbrains-mono-nl-fonts
 
   - gvfs-mtp
   - pulseaudio-utils
@@ -129,7 +132,6 @@ packages:
   - xdg-desktop-portal-gtk
 
   - pavucontrol
-  - pcmanfm
   - simple-scan
   - nm-connection-editor
   - alacritty
@@ -174,12 +176,14 @@ packages:
   - xorg-x11-drv-nvidia-cuda
 
 # i3 
-  - i3
+  - i3-gaps
   - i3lock
   - i3status
   - i3blocks
+  - polybar
   - rofi
   - dunst
+
 
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
