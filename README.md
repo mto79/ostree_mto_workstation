@@ -28,6 +28,10 @@ sudo rpm-ostree rebase mto-workstation:mto-desktop
 
 sudo rpm-ostree upgrade (--allow-downgrade) when timestamps are not correct.
 
+# 
+sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
+systemctl reboot
+
 ## Import data
 While needing some encrypted data it is can handy to have the crdentials before proceeding.
 
