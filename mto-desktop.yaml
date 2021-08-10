@@ -15,6 +15,7 @@ repos:
   - rpmfusion-nonfree
   - rpmfusion-nonfree-updates
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
+  - copr:copr.fedorainfracloud.org:flatcap:neomutt
 
 packages:
 # hardware/drivers

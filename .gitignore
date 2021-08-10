@@ -1,0 +1,5 @@
+# exclude everything in local-rpms
+local-rpms/*
+
+# exception to the rule
+!local-rpms/.gitkeep

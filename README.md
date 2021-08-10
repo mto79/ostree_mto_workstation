@@ -13,6 +13,10 @@ git clone https://github.com/mto79/ostree_mto_workstation.git
 git clone git@github.com:mto79/ostree_mto_workstation.git (for ssh you need
 private key )
 
+Download the local rpms in the directory local-rpms.
+There will be bash script to be made
+
+
 cd ostree_mto_workstation
 sudo ./compose.sh
 
