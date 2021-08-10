@@ -18,8 +18,11 @@ There will be bash script to be made
 
 
 cd ostree_mto_workstation
-sudo ./compose.sh
+sudo ./mto-compose.sh
 
+sudo ./mto-setup.sh
+
+# to be place in mto-setup.sh 
 sudo ostree remote add mto-workstation file:///var/tmp/repo --no-gpg-verify
 sudo rpm-ostree rebase mto-workstation:mto-desktop
 
