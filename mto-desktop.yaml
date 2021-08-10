@@ -26,6 +26,8 @@ packages:
   - alsa-sof-firmware
   - NetworkManager-wifi
   - NetworkManager-openvpn-gnome
+  - NetworkManager-bluetooth
+  - NetworkManager-wwan
   - sane-backends
   - sane-backends-drivers-scanners
   - powertop
@@ -62,10 +64,12 @@ packages:
   - sudo
   - usbutils
   - nfs-utils
+  - cifs-utils
   - ntfs-3g
   - ntfsprogs
   - net-tools
   - ethtool
+  - dbus
 # shell tools and development
   - bc
   - gnupg2
@@ -113,7 +117,16 @@ packages:
   - cockpit-ws
   - syncthing
   - krb5-workstation
-
+  - tar
+  - tcpdump
+  - telnet
+  - time
+  - traceroute
+  - which
+  - wireless-tools
+  - words
+  - chrony
+  
 # desktop plumbing/apps
   - dejavu-sans-fonts
   - dejavu-serif-fonts
@@ -121,7 +134,9 @@ packages:
   - fontawesome-fonts
   - google-noto-emoji-color-fonts
   - jetbrains-mono-nl-fonts
-
+  - powerline
+  - powerline-fonts
+  
   - gvfs-mtp
   - pulseaudio-utils
   - alsa-plugins-pulseaudio
@@ -139,7 +154,6 @@ packages:
   - firefox
   - eog
   - evince
-  - hugo
   - pass
   - kpcli
   - pinentry-gnome3
