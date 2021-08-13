@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 set -xeuo pipefail
 
-# Install local RPMs
-rpm -i --verbose /usr/lib/local-rpms/*.rpm
-rm -rf /usr/lib/local-rpms
-
 # Enable SysRQ
 echo 'kernel.sysrq = 1' > /usr/lib/sysctl.d/90-sysrq.conf
 

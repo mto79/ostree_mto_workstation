@@ -14,6 +14,7 @@ repos:
   - rpmfusion-free-updates
   - rpmfusion-nonfree
   - rpmfusion-nonfree-updates
+  - google-chrome
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
   - copr:copr.fedorainfracloud.org:flatcap:neomutt
 
@@ -69,7 +70,8 @@ packages:
   - ntfsprogs
   - net-tools
   - ethtool
-  - dbus
+  - dbus-x11
+
 # shell tools and development
   - bc
   - gnupg2
@@ -83,7 +85,6 @@ packages:
   - unzip
   - neovim 
   - python3-neovim
-  - ranger
   - bash-completion
   - fish
   - qemu-system-x86-core
@@ -126,7 +127,8 @@ packages:
   - wireless-tools
   - words
   - chrony
-  
+  - google-chrome-stable 
+ 
 # desktop plumbing/apps
   - dejavu-sans-fonts
   - dejavu-serif-fonts
@@ -152,10 +154,6 @@ packages:
   - nm-connection-editor
   - alacritty
   - firefox
-  - eog
-  - evince
-  - pass
-  - kpcli
   - pinentry-gnome3
   - lxpolkit
   - lxrandr
@@ -198,11 +196,9 @@ packages:
   - polybar
   - rofi
   - dunst
-
+  - feh
 
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
-  - ["local-rpms/chezmoi-2.1.4-x86_64.rpm", "/usr/lib/local-rpms/chezmoi-2.1.4-x86_64.rpm"]
-  - ["local-rpms/duplicati-2.0.6.3-2.0.6.3_beta_20210617.noarch.rpm", "/usr/lib/local-rpms/duplicati-2.0.6.3-2.0.6.3_beta_20210617.noarch.rpm"]
 
 postprocess-script: mto-post.sh
