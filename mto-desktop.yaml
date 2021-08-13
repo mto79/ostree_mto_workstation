@@ -37,6 +37,9 @@ packages:
   - udisks2-lvm2
   - opensc
   - glx-utils
+# Fingerprint
+  - fprintd
+  - fprintd-pam
 # Nvidia
   - akmod-nvidia
 # Webcam (logitech c920)
