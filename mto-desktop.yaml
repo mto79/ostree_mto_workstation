@@ -7,7 +7,6 @@ rojig:
   license: MIT
 
 repos:
-  - asbru-cm_asbru-cm
   - code
   - fedora-34
   - fedora-34-updates
@@ -134,7 +133,8 @@ packages:
   - words
   - chrony
   - jq
- 
+  - xkill 
+
 # desktop plumbing/apps
   - dejavu-sans-fonts
   - dejavu-serif-fonts
@@ -168,8 +168,6 @@ packages:
   - google-chrome-stable 
   - code
   - freerdp
-  - rdesktop
-  - asbru-cm
   - pinentry-gnome3
   - lxpolkit
   - lxrandr
@@ -203,7 +201,6 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
-  - xorg-xkill
 
 # i3 
   - i3-gaps
