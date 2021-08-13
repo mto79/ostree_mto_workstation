@@ -20,3 +20,13 @@ repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
 
+[copr:copr.fedorainfracloud.org:momosomium:fontawesome5]
+name=Copr repo for fontawesome5 owned by momosomium
+baseurl=https://download.copr.fedorainfracloud.org/results/momosomium/fontawesome5/fedora-34-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/momosomium/fontawesome5/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
