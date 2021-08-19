@@ -18,27 +18,31 @@ repos:
   - google-chrome
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
   - copr:copr.fedorainfracloud.org:flatcap:neomutt
-  - copr:copr.fedorainfracloud.org:momosomium:fontawesome5
+  # - copr:copr.fedorainfracloud.org:momosomium:fontawesome5
 
 packages:
-# hardware/drivers
+# Hardware/drivers/firmware
   - kernel
   - kernel-modules-extra
   - iwl6000g2a-firmware
   - iwl7260-firmware
   - alsa-sof-firmware
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - powertop
+  - udisks2-lvm2
+  - opensc
+# Network
+  - NetworkManager 
   - NetworkManager-wifi
   - NetworkManager-openvpn-gnome
   - NetworkManager-bluetooth
   - NetworkManager-wwan
-  - sane-backends
-  - sane-backends-drivers-scanners
-  - powertop
+  - network-manager-applet
+  - nm-connection-editor
   - iwd
   - wpa_supplicant
-  - udisks2-lvm2
-  - opensc
-  - glx-utils
+  - openvpn 
 # Fingerprint
   - fprintd
   - fprintd-pam
@@ -78,6 +82,8 @@ packages:
   - dbus-x11
 
 # shell tools and development
+  - fwupd 
+  - lshw 
   - bc
   - gnupg2
   - fpaste
@@ -105,7 +111,6 @@ packages:
   - virt-viewer
   - libguestfs-tools
   - vagrant-libvirt 
-  - openvpn
   - dnf-plugins-core
   - neomutt
   - nmap-ncat
@@ -139,10 +144,10 @@ packages:
   - dejavu-sans-fonts
   - dejavu-serif-fonts
   - dejavu-sans-mono-fonts
-  - fontawesome-fonts
+    # - fontawesome-fonts
   - fira-code-fonts
   - google-noto-emoji-color-fonts
-  - jetbrains-mono-nl-fonts
+    #- jetbrains-mono-nl-fonts
   - powerline
   - powerline-fonts
   
@@ -159,11 +164,12 @@ packages:
   - pavucontrol
   - redshift
   - brightnessctl
+  - playerctl
   - ncmpcpp 
   - mpd
   - simple-scan
-  - nm-connection-editor
   - alacritty
+  - starship
   - firefox
   - google-chrome-stable 
   - code
@@ -211,6 +217,9 @@ packages:
   - rofi
   - dunst
   - feh
+  - scrot
+  - picom  
+  - flameshot
 
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]

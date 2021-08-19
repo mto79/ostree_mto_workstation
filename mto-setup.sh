@@ -35,15 +35,15 @@ echo ""
 # echo "Flatpak installation"
 # echo ""
 # flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-# flatpak install flathub com.spotify.Client -y
+flatpak install flathub com.spotify.Client -y
 # flatpak install flathub com.getpostman.Postman -y
 # flatpak install flathub org.mozilla.Thunderbird -y
-# flatpak install flathub org.fedoraproject.MediaWriter -y
-# flatpak install flathub us.zoom.Zoom -y
-# flatpak install flathub com.bluejeans.BlueJeans -y
-# flatpak install flathub com.slack.Slack -y
-# flatpak install flathub com.microsoft.Teams -y
-# flatpak install flathub com.skype.Client -y
-# flatpak install flathub com.adobe.Flash-Player-Projector -y
+flatpak install flathub org.fedoraproject.MediaWriter -y
+flatpak install flathub us.zoom.Zoom -y
+flatpak install flathub com.bluejeans.BlueJeans -y
+flatpak install flathub com.slack.Slack -y
+flatpak install flathub com.microsoft.Teams -y
+flatpak install flathub com.skype.Client -y
+flatpak install flathub com.adobe.Flash-Player-Projector -y
 # flatpak install flathub com.visualstudio.code -y
-# flatpak install flathub com.belmoussaoui.Authenticator -y
+flatpak install flathub com.belmoussaoui.Authenticator -y
