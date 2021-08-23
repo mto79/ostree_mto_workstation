@@ -15,6 +15,7 @@ repos:
   - rpmfusion-free-updates
   - rpmfusion-nonfree
   - rpmfusion-nonfree-updates
+  - rpmsphere
   - google-chrome
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
   - copr:copr.fedorainfracloud.org:flatcap:neomutt
@@ -80,6 +81,8 @@ packages:
   - net-tools
   - ethtool
   - dbus-x11
+  - lm_sensors
+  - gmp
 
 # shell tools and development
   - fwupd 
@@ -135,6 +138,7 @@ packages:
   - traceroute
   - which
   - wireless-tools
+  - inotify-tools
   - words
   - chrony
   - jq
@@ -162,6 +166,7 @@ packages:
   - xdg-desktop-portal-gtk
 
   - pavucontrol
+  - pipewire-utils
   - redshift
   - brightnessctl
   - playerctl
