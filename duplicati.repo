@@ -1,0 +1,8 @@
+[gitlab.com_samuel-w_repo]
+name=gitlab.com_samuel-w_repo
+baseurl=https://samuel-w.gitlab.io/duplicati-deb-rpm-repo/rpms-beta/
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+gpgkey=https://gitlab.com/samuel-w/duplicati-deb-rpm-repo/-/raw/master/pub.gpg
+metadata_expire=1h

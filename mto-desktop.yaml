@@ -11,6 +11,7 @@ repos:
   - fedora-34
   - fedora-34-updates
   - fedora-34-updates-testing
+  - gitlab.com_samuel-w_repo
   - rpmfusion-free
   - rpmfusion-free-updates
   - rpmfusion-nonfree
@@ -187,6 +188,7 @@ packages:
   - libappindicator-sharp
   - gnome-disk-utility
   - gnome-keyring
+  - duplicati
 
 # x11
   - glx-utils

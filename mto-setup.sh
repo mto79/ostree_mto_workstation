@@ -24,13 +24,16 @@ echo "-----------------------"
 rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
 systemctl reboot
 
+echo "Create Data dir"
+echo "-----------------------"
+mkdir -p /var/home/mto/data
 
 
-# echo "Set certificates for duplicati mono (can only be done with flag --user)"
-# echo ""
-# cert-sync --user /etc/pki/tls/certs/ca-bundle.crt
 
-echo ""
+
+
+echo "Install Flatpak"
+echo "-----------------------"
 
 # echo "Flatpak installation"
 # echo ""
