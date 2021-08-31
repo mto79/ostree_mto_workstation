@@ -24,10 +24,10 @@ echo "-----------------------"
 rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
 systemctl reboot
 
-echo "Create Data dir"
+echo "Create Data locations"
 echo "-----------------------"
 mkdir -p /var/home/mto/data
-
+mkdir -p /var/home/mto/.ssh/controlmasters
 
 
 
@@ -48,5 +48,6 @@ flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.microsoft.Teams -y
 flatpak install flathub com.skype.Client -y
 flatpak install flathub com.adobe.Flash-Player-Projector -y
-# flatpak install flathub com.visualstudio.code -y
+flatpak install flathub org.jitsi.jitsi-meet -y
+flatpak install flathub com.mattermost.Desktop -y
 flatpak install flathub com.belmoussaoui.Authenticator -y

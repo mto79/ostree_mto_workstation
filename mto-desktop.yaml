@@ -11,6 +11,8 @@ repos:
   - fedora-34
   - fedora-34-updates
   - fedora-34-updates-testing
+  # - fedora-cisco-openh264
+  # - fedora-cisco-openh264-debuginfo
   - gitlab.com_samuel-w_repo
   - rpmfusion-free
   - rpmfusion-free-updates
@@ -20,7 +22,6 @@ repos:
   - google-chrome
   - copr:copr.fedorainfracloud.org:vladius:i3blocks
   - copr:copr.fedorainfracloud.org:flatcap:neomutt
-  # - copr:copr.fedorainfracloud.org:momosomium:fontawesome5
 
 packages:
 # Hardware/drivers/firmware
@@ -144,15 +145,15 @@ packages:
   - chrony
   - jq
   - xkill 
+  - nmap 
+  - rsync
 
 # desktop plumbing/apps
   - dejavu-sans-fonts
   - dejavu-serif-fonts
   - dejavu-sans-mono-fonts
-    # - fontawesome-fonts
   - fira-code-fonts
   - google-noto-emoji-color-fonts
-    #- jetbrains-mono-nl-fonts
   - powerline
   - powerline-fonts
   
@@ -162,6 +163,7 @@ packages:
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly
   - gstreamer1-libav
+  - ffmpeg-libs
   # for wf-recorder
   - libavdevice
   - xdg-desktop-portal-gtk
@@ -189,6 +191,8 @@ packages:
   - gnome-disk-utility
   - gnome-keyring
   - duplicati
+  - kpcli
+  - pass  
 
 # x11
   - glx-utils
