@@ -134,10 +134,7 @@ packages:
   - syncthing
   - krb5-workstation
   - tar
-  - tcpdump
-  - telnet
   - time
-  - traceroute
   - which
   - wireless-tools
   - inotify-tools
@@ -145,8 +142,6 @@ packages:
   - chrony
   - jq
   - xkill 
-  - nmap 
-  - rsync
 
 # desktop plumbing/apps
   - dejavu-sans-fonts
@@ -156,7 +151,8 @@ packages:
   - google-noto-emoji-color-fonts
   - powerline
   - powerline-fonts
-  
+  - papirus-icon-theme
+
   - gvfs-mtp
   - pulseaudio-utils
   - alsa-plugins-pulseaudio
@@ -181,7 +177,6 @@ packages:
   - firefox
   - google-chrome-stable 
   - code
-  - freerdp
   - pinentry-gnome3
   - lxpolkit
   - lxrandr
@@ -191,8 +186,6 @@ packages:
   - gnome-disk-utility
   - gnome-keyring
   - duplicati
-  - kpcli
-  - pass  
 
 # x11
   - glx-utils
