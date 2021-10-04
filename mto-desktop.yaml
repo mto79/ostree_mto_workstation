@@ -11,8 +11,6 @@ repos:
   - fedora-34
   - fedora-34-updates
   - fedora-34-updates-testing
-  # - fedora-cisco-openh264
-  # - fedora-cisco-openh264-debuginfo
   - gitlab.com_samuel-w_repo
   - rpmfusion-free
   - rpmfusion-free-updates
@@ -162,8 +160,8 @@ packages:
   - ffmpeg-libs
   # for wf-recorder
   - libavdevice
+  - xdg-desktop-portal 
   - xdg-desktop-portal-gtk
-
   - pavucontrol
   - pipewire-utils
   - redshift
@@ -175,6 +173,7 @@ packages:
   - alacritty
   - starship
   - firefox
+  - thunderbird
   - google-chrome-stable 
   - code
   - pinentry-gnome3
@@ -211,7 +210,7 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
-
+  - xorg-xeyes 
 # i3 
   - i3-gaps
   - i3lock
