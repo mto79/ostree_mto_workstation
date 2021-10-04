@@ -44,6 +44,10 @@ packages:
   - iwd
   - wpa_supplicant
   - openvpn 
+# Bluetooth
+  - bluez 
+  - bluez-tools
+  -   
 # Fingerprint
   - fprintd
   - fprintd-pam
@@ -163,6 +167,9 @@ packages:
   - xdg-desktop-portal 
   - xdg-desktop-portal-gtk
   - pavucontrol
+  - pipewire-alsa
+  - pipewire-gstreamer
+  - pipewire-pulseaudio
   - pipewire-utils
   - redshift
   - brightnessctl
