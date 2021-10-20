@@ -180,6 +180,7 @@ packages:
   - starship
   - firefox
   - thunderbird
+  - remmina
   - google-chrome-stable 
   - code
   - pinentry-gnome3
