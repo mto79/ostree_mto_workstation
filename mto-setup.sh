@@ -40,7 +40,6 @@ echo "-----------------------"
 # flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.spotify.Client -y
 # flatpak install flathub com.getpostman.Postman -y
-# flatpak install flathub org.mozilla.Thunderbird -y
 flatpak install flathub org.fedoraproject.MediaWriter -y
 flatpak install flathub us.zoom.Zoom -y
 flatpak install flathub com.bluejeans.BlueJeans -y

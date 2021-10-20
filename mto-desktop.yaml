@@ -47,7 +47,6 @@ packages:
 # Bluetooth
   - bluez 
   - bluez-tools
-  -   
 # Fingerprint
   - fprintd
   - fprintd-pam
@@ -217,7 +216,6 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
-  - xorg-xeyes 
 # i3 
   - i3-gaps
   - i3lock
