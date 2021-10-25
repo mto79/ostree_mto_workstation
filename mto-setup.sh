@@ -50,3 +50,14 @@ flatpak install flathub com.adobe.Flash-Player-Projector -y
 flatpak install flathub org.jitsi.jitsi-meet -y
 flatpak install flathub com.mattermost.Desktop -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
+
+echo "Libvirt: Prevenpassword prompts for each and every libvirt action, install the following polkit rule."
+echo "-----------------------"
+
+sudo tee /etc/polkit-1/rules.d/80-libvirt.rules <<EOF
+polkit.addRule(function(action, subject) {
+ if (action.id == "org.libvirt.unix.manage" && subject.local && subject.active && subject.isInGroup("wheel")) {
+ return polkit.Result.YES;
+ }
+});
+EOF

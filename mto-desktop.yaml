@@ -181,6 +181,7 @@ packages:
   - firefox
   - thunderbird
   - remmina
+  - remmina-plugins-spice
   - google-chrome-stable 
   - code
   - pinentry-gnome3
