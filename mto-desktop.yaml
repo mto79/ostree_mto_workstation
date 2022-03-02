@@ -20,58 +20,16 @@ repos:
   - rpmsphere
   
 packages:
-# Hardware/drivers/firmware
+# Backup/Restore  
+  - duplicati
+# Base
+  - basesystem
   - kernel
   - kernel-modules-extra
-  - iwl6000g2a-firmware
-  - iwl7260-firmware
-  - alsa-sof-firmware
-  - sane-backends
-  - sane-backends-drivers-scanners
-  - powertop
-  - udisks2-lvm2
-  - opensc
-  - fwupd 
-  - lshw 
-  
+  - glibc-langpack-en
 # Bluetooth
   - bluez 
   - bluez-tools
-# Fingerprint
-  - fprintd
-  - fprintd-pam
-# Nvidia
-  - akmod-nvidia
-# Webcam (logitech c920)
-  - v4l-utils
-  - v4l2ucp
-# Printer (hp officejet 250 mobile)
-  - hplip
-  - hplip-gui
-
-# basic system
-  - acl
-  - attr
-  - basesystem
-  - cryptsetup
-  - filesystem
-  - glibc-langpack-de
-  - glibc-langpack-en
-  - kbd
-  - nss-altfiles
-  - pciutils
-  # don't care, but rpm-ostree build fails otherwise
-  - selinux-policy-targeted
-  - sudo
-  - usbutils
-  - dbus-x11
-  - lm_sensors
-  - gmp
-
-
-
-# Backup/Restore  
-  - duplicati
 # Browser
   - firefox
   - google-chrome-stable 
@@ -84,6 +42,7 @@ packages:
   - unzip
   - tar
 # Connection  
+  - openssh-server
   - remmina
   - remmina-plugins-spice
 # Editing
@@ -91,13 +50,24 @@ packages:
   - neovim 
   - python3-neovim
 # Filesystem
-  - file
-  - inotify-tools
-  - nfs-utils
+  - acl
+  - attr
   - cifs-utils
+  - cryptsetup
+  - file
+  - filesystem
+  - inotify-tools
+  - lsof
+  - nfs-utils
+  - nss-altfiles
   - ntfs-3g
   - ntfsprogs
   - tree
+  - udisks2-lvm2
+  - syncthing
+# Fingerprint
+  - fprintd
+  - fprintd-pam
 # Fonts
   - dejavu-sans-fonts
   - dejavu-serif-fonts
@@ -106,6 +76,12 @@ packages:
   - google-noto-emoji-color-fonts
   - powerline
   - powerline-fonts
+# Firmware/Hardware Monitoring
+  - fwupd 
+  - lm_sensors
+  - lshw 
+  - powertop
+  - strace
 # I3 
   - i3-gaps
   - i3lock
@@ -117,6 +93,12 @@ packages:
   - scrot
   - picom  
   - flameshot
+  - redshift
+# IO Devices
+  - pciutils
+  - usbutils
+# Keyboard
+  - kbd
 # Mail
   - isync
   - thunderbird
@@ -125,6 +107,8 @@ packages:
   - dnsmasq
   - hostname
   - iproute
+  - iwl6000g2a-firmware
+  - iwl7260-firmware
   - iwd
   - NetworkManager 
   - NetworkManager-wifi
@@ -133,15 +117,27 @@ packages:
   - NetworkManager-wwan
   - network-manager-applet
   - net-tools
+  - nmap-ncat
   - nm-connection-editor
   - mtr
   - openvpn 
   - wireless-tools
   - wpa_supplicant
+# Nvidia
+  - akmod-nvidia
+# Printer/Scanner (hp officejet 250 mobile)
+  - hplip
+  - hplip-gui
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - simple-scan
+# Smartcard 
+  - opensc
 # Sound  
+  - alsa-plugins-pulseaudio
+  - alsa-sof-firmware
   - gvfs-mtp
   - pulseaudio-utils
-  - alsa-plugins-pulseaudio
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly
   - gstreamer1-libav
@@ -152,6 +148,14 @@ packages:
   - pipewire-gstreamer
   - pipewire-pulseaudio
   - pipewire-utils
+  - mpd
+  - playerctl
+  - ncmpcpp 
+# Security
+  - gnupg2
+  - krb5-workstation
+  - selinux-policy-targeted
+  - sudo
 # Terminal
   - alacritty
   - bash-completion
@@ -161,6 +165,24 @@ packages:
   - papirus-icon-theme
 # Tool
   - bc 
+  - chrony
+  - dnf-plugins-core
+  - git
+  - gmp
+  - gnome-disk-utility
+  - gnome-keyring
+  - jq
+  - libappindicator-gtk3
+  - libappindicator-sharp
+  - man-db
+  - mono-devel
+  - make
+  - patchutils
+  - pinentry-gnome3
+  - time
+  - wget
+  - which
+  - words
 # Virtualization
   - qemu-system-x86-core
   - qemu-ui-sdl
@@ -175,49 +197,18 @@ packages:
   - virt-viewer
   - libguestfs-tools
   - vagrant-libvirt 
-
-
-
-  - gnupg2
-  - lsof
-  - man-db
-  
-  - dnf-plugins-core
-  - nmap-ncat
-  
-  - openssh-server
   - systemd-container
-  - git
-  - patchutils
-  - mono-devel
-  - make
-  - strace
-  - wget
-  - syncthing
-  - krb5-workstation
-  - chrony
-  - time
-  - which
-  - words
-  - jq
-  - xkill 
-  - xsetroot
-  - playerctl
-  - ncmpcpp 
-  - mpd
-  - simple-scan
-  - redshift
-  - pinentry-gnome3
+  # Flatpak 
+  - xdg-desktop-portal 
+  - xdg-desktop-portal-gtk
+# Webcam (logitech c920)
+  - v4l-utils
+  - v4l2ucp
+# x11
+  - dbus-x11
   - lxpolkit
   - lxrandr
   - lxappearance
-  - libappindicator-gtk3
-  - libappindicator-sharp
-  - gnome-disk-utility
-  - gnome-keyring
-  - xdg-desktop-portal 
-  - xdg-desktop-portal-gtk
-# x11
   - glx-utils
   - mesa-dri-drivers
   - mesa-vulkan-drivers
@@ -241,6 +232,8 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
+  - xkill 
+  - xsetroot
   
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
