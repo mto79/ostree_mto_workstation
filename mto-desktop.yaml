@@ -18,8 +18,6 @@ repos:
   - rpmfusion-nonfree-updates
   - rpmsphere
   - google-chrome
-  - copr:copr.fedorainfracloud.org:vladius:i3blocks
-  - copr:copr.fedorainfracloud.org:flatcap:neomutt
 
 packages:
 # Hardware/drivers/firmware
@@ -33,17 +31,9 @@ packages:
   - powertop
   - udisks2-lvm2
   - opensc
-# Network
-  - NetworkManager 
-  - NetworkManager-wifi
-  - NetworkManager-openvpn-gnome
-  - NetworkManager-bluetooth
-  - NetworkManager-wwan
-  - network-manager-applet
-  - nm-connection-editor
-  - iwd
-  - wpa_supplicant
-  - openvpn 
+  - fwupd 
+  - lshw 
+  
 # Bluetooth
   - bluez 
   - bluez-tools
@@ -64,12 +54,11 @@ packages:
   - attr
   - basesystem
   - cryptsetup
-  - dnsmasq
+  
   - filesystem
   - glibc-langpack-de
   - glibc-langpack-en
-  - hostname
-  - iproute
+  
   - kbd
   - nss-altfiles
   - pciutils
@@ -77,33 +66,109 @@ packages:
   - selinux-policy-targeted
   - sudo
   - usbutils
-  - nfs-utils
-  - cifs-utils
-  - ntfs-3g
-  - ntfsprogs
-  - net-tools
-  - ethtool
+  
+  
+  
   - dbus-x11
   - lm_sensors
   - gmp
 
-# shell tools and development
-  - fwupd 
-  - lshw 
-  - bc
-  - gnupg2
-  - fpaste
-  - lsof
-  - man-db
-  - mtr
-  - tree
+
+
+
+
+# Backup/Restore  
+  - duplicati
+# Browser
+  - firefox
+  - google-chrome-stable 
+# Cockpit  
+  - cockpit-system
+  - cockpit-ws
+# Compression
   - bzip2
   - zip
   - unzip
+  - tar
+# Connection  
+  - remmina
+  - remmina-plugins-spice
+# Editing
+  - code
   - neovim 
   - python3-neovim
+# Filesystem
+  - file
+  - inotify-tools
+  - nfs-utils
+  - cifs-utils
+  - ntfs-3g
+  - ntfsprogs
+  - tree
+# Fonts
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - fira-code-fonts
+  - google-noto-emoji-color-fonts
+  - powerline
+  - powerline-fonts
+# I3 
+  - i3-gaps
+  - i3lock
+  - i3status
+  - polybar
+  - rofi
+  - dunst
+  - feh
+  - scrot
+  - picom  
+  - flameshot
+# Mail
+  - isync
+  - thunderbird
+# Network
+  - ethtool
+  - dnsmasq
+  - hostname
+  - iproute
+  - iwd
+  - NetworkManager 
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-bluetooth
+  - NetworkManager-wwan
+  - network-manager-applet
+  - net-tools
+  - nm-connection-editor
+  - mtr
+  - openvpn 
+  - wireless-tools
+  - wpa_supplicant
+# Sound  
+  - gvfs-mtp
+  - pulseaudio-utils
+  - alsa-plugins-pulseaudio
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - gstreamer1-libav
+  - ffmpeg-libs
+  - libavdevice
+  - pavucontrol
+  - pipewire-alsa
+  - pipewire-gstreamer
+  - pipewire-pulseaudio
+  - pipewire-utils
+# Terminal
+  - alacritty
   - bash-completion
   - fish
+  - starship
+# Theming/Icon
+  - papirus-icon-theme
+# Tool
+  - bc 
+# Virtualization
   - qemu-system-x86-core
   - qemu-ui-sdl
   - qemu-img
@@ -117,73 +182,38 @@ packages:
   - virt-viewer
   - libguestfs-tools
   - vagrant-libvirt 
+
+
+
+  - gnupg2
+  - lsof
+  - man-db
+  
   - dnf-plugins-core
-  - neomutt
   - nmap-ncat
-  - isync
+  
   - openssh-server
   - systemd-container
   - git
-  - file
   - patchutils
   - mono-devel
   - make
   - strace
   - wget
-  - cockpit-system
-  - cockpit-ws
   - syncthing
   - krb5-workstation
-  - tar
+  - chrony
   - time
   - which
-  - wireless-tools
-  - inotify-tools
   - words
-  - chrony
   - jq
   - xkill 
-
-# desktop plumbing/apps
-  - dejavu-sans-fonts
-  - dejavu-serif-fonts
-  - dejavu-sans-mono-fonts
-  - fira-code-fonts
-  - google-noto-emoji-color-fonts
-  - powerline
-  - powerline-fonts
-  - papirus-icon-theme
-
-  - gvfs-mtp
-  - pulseaudio-utils
-  - alsa-plugins-pulseaudio
-  - gstreamer1-plugins-good
-  - gstreamer1-plugins-ugly
-  - gstreamer1-libav
-  - ffmpeg-libs
-  # for wf-recorder
-  - libavdevice
-  - xdg-desktop-portal 
-  - xdg-desktop-portal-gtk
-  - pavucontrol
-  - pipewire-alsa
-  - pipewire-gstreamer
-  - pipewire-pulseaudio
-  - pipewire-utils
-  - redshift
-  - brightnessctl
+  - xsetroot
   - playerctl
   - ncmpcpp 
   - mpd
   - simple-scan
-  - alacritty
-  - starship
-  - firefox
-  - thunderbird
-  - remmina
-  - remmina-plugins-spice
-  - google-chrome-stable 
-  - code
+  - redshift
   - pinentry-gnome3
   - lxpolkit
   - lxrandr
@@ -192,8 +222,8 @@ packages:
   - libappindicator-sharp
   - gnome-disk-utility
   - gnome-keyring
-  - duplicati
-
+  - xdg-desktop-portal 
+  - xdg-desktop-portal-gtk
 # x11
   - glx-utils
   - mesa-dri-drivers
@@ -218,19 +248,7 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
-# i3 
-  - i3-gaps
-  - i3lock
-  - i3status
-  - i3blocks
-  - polybar
-  - rofi
-  - dunst
-  - feh
-  - scrot
-  - picom  
-  - flameshot
-
+  
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
 
