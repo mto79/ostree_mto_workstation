@@ -12,13 +12,13 @@ repos:
   - fedora-34-updates
   - fedora-34-updates-testing
   - gitlab.com_samuel-w_repo
+  - google-chrome
   - rpmfusion-free
   - rpmfusion-free-updates
   - rpmfusion-nonfree
   - rpmfusion-nonfree-updates
   - rpmsphere
-  - google-chrome
-
+  
 packages:
 # Hardware/drivers/firmware
   - kernel
@@ -54,11 +54,9 @@ packages:
   - attr
   - basesystem
   - cryptsetup
-  
   - filesystem
   - glibc-langpack-de
   - glibc-langpack-en
-  
   - kbd
   - nss-altfiles
   - pciutils
@@ -66,14 +64,9 @@ packages:
   - selinux-policy-targeted
   - sudo
   - usbutils
-  
-  
-  
   - dbus-x11
   - lm_sensors
   - gmp
-
-
 
 
 
