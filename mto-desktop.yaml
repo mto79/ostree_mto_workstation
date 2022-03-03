@@ -37,6 +37,7 @@ packages:
 # Cockpit  
   - cockpit-system
   - cockpit-ws
+  - cockpit-machines
 # Compression
   - bzip2
   - zip
