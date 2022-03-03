@@ -28,6 +28,7 @@ packages:
   - kernel-modules-extra
   - glibc-langpack-en
 # Bluetooth
+  - blueman
   - bluez 
   - bluez-tools
 # Browser
@@ -153,7 +154,9 @@ packages:
   - ncmpcpp 
 # Security
   - gnupg2
+  - kpcli
   - krb5-workstation
+  - pass
   - selinux-policy-targeted
   - sudo
 # Terminal
@@ -171,6 +174,7 @@ packages:
   - gmp
   - gnome-disk-utility
   - gnome-keyring
+  - hugo
   - jq
   - libappindicator-gtk3
   - libappindicator-sharp
