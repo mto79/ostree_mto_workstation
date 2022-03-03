@@ -12,98 +12,183 @@ repos:
   - fedora-34-updates
   - fedora-34-updates-testing
   - gitlab.com_samuel-w_repo
+  - google-chrome
   - rpmfusion-free
   - rpmfusion-free-updates
   - rpmfusion-nonfree
   - rpmfusion-nonfree-updates
   - rpmsphere
-  - google-chrome
-  - copr:copr.fedorainfracloud.org:vladius:i3blocks
-  - copr:copr.fedorainfracloud.org:flatcap:neomutt
-
+  
 packages:
-# Hardware/drivers/firmware
+# Backup/Restore  
+  - duplicati
+# Base
+  - basesystem
   - kernel
   - kernel-modules-extra
+  - glibc-langpack-en
+# Bluetooth
+  - blueman
+  - bluez 
+  - bluez-tools
+# Browser
+  - firefox
+  - google-chrome-stable 
+# Cockpit  
+  - cockpit-system
+  - cockpit-ws
+  - cockpit-machines
+# Compression
+  - bzip2
+  - zip
+  - unzip
+  - tar
+# Connection  
+  - openssh-server
+  - remmina
+  - remmina-plugins-spice
+# Editing
+  - code
+  - neovim 
+  - python3-neovim
+# Filesystem
+  - acl
+  - attr
+  - cifs-utils
+  - cryptsetup
+  - file
+  - filesystem
+  - inotify-tools
+  - lsof
+  - nfs-utils
+  - nss-altfiles
+  - ntfs-3g
+  - ntfsprogs
+  - tree
+  - udisks2-lvm2
+  - syncthing
+# Fingerprint
+  - fprintd
+  - fprintd-pam
+# Fonts
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - fira-code-fonts
+  - google-noto-emoji-color-fonts
+  - powerline
+  - powerline-fonts
+# Firmware/Hardware Monitoring
+  - fwupd 
+  - lm_sensors
+  - lshw 
+  - powertop
+  - strace
+# I3 
+  - i3-gaps
+  - i3lock
+  - i3status
+  - polybar
+  - rofi
+  - dunst
+  - feh
+  - scrot
+  - picom  
+  - flameshot
+  - redshift
+# IO Devices
+  - pciutils
+  - usbutils
+# Keyboard
+  - kbd
+# Mail
+  - isync
+  - thunderbird
+# Network
+  - ethtool
+  - dnsmasq
+  - hostname
+  - iproute
   - iwl6000g2a-firmware
   - iwl7260-firmware
-  - alsa-sof-firmware
-  - sane-backends
-  - sane-backends-drivers-scanners
-  - powertop
-  - udisks2-lvm2
-  - opensc
-# Network
+  - iwd
   - NetworkManager 
   - NetworkManager-wifi
   - NetworkManager-openvpn-gnome
   - NetworkManager-bluetooth
   - NetworkManager-wwan
   - network-manager-applet
+  - net-tools
+  - nmap-ncat
   - nm-connection-editor
-  - iwd
-  - wpa_supplicant
+  - mtr
   - openvpn 
-# Bluetooth
-  - bluez 
-  - bluez-tools
-# Fingerprint
-  - fprintd
-  - fprintd-pam
+  - wireless-tools
+  - wpa_supplicant
 # Nvidia
   - akmod-nvidia
-# Webcam (logitech c920)
-  - v4l-utils
-  - v4l2ucp
-# Printer (hp officejet 250 mobile)
+# Printer/Scanner (hp officejet 250 mobile)
   - hplip
   - hplip-gui
-
-# basic system
-  - acl
-  - attr
-  - basesystem
-  - cryptsetup
-  - dnsmasq
-  - filesystem
-  - glibc-langpack-de
-  - glibc-langpack-en
-  - hostname
-  - iproute
-  - kbd
-  - nss-altfiles
-  - pciutils
-  # don't care, but rpm-ostree build fails otherwise
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - simple-scan
+# Smartcard 
+  - opensc
+# Sound  
+  - alsa-plugins-pulseaudio
+  - alsa-sof-firmware
+  - gvfs-mtp
+  - pulseaudio-utils
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - gstreamer1-libav
+  - ffmpeg-libs
+  - libavdevice
+  - pavucontrol
+  - pipewire-alsa
+  - pipewire-gstreamer
+  - pipewire-pulseaudio
+  - pipewire-utils
+  - mpd
+  - playerctl
+  - ncmpcpp 
+# Security
+  - gnupg2
+  - kpcli
+  - krb5-workstation
+  - pass
   - selinux-policy-targeted
   - sudo
-  - usbutils
-  - nfs-utils
-  - cifs-utils
-  - ntfs-3g
-  - ntfsprogs
-  - net-tools
-  - ethtool
-  - dbus-x11
-  - lm_sensors
-  - gmp
-
-# shell tools and development
-  - fwupd 
-  - lshw 
-  - bc
-  - gnupg2
-  - fpaste
-  - lsof
-  - man-db
-  - mtr
-  - tree
-  - bzip2
-  - zip
-  - unzip
-  - neovim 
-  - python3-neovim
+# Terminal
+  - alacritty
   - bash-completion
   - fish
+  - starship
+# Theming/Icon
+  - papirus-icon-theme
+# Tool
+  - bc 
+  - chrony
+  - dnf-plugins-core
+  - git
+  - gmp
+  - gnome-disk-utility
+  - gnome-keyring
+  - hugo
+  - jq
+  - libappindicator-gtk3
+  - libappindicator-sharp
+  - man-db
+  - mono-devel
+  - make
+  - patchutils
+  - pinentry-gnome3
+  - time
+  - wget
+  - which
+  - words
+# Virtualization
   - qemu-system-x86-core
   - qemu-ui-sdl
   - qemu-img
@@ -117,84 +202,18 @@ packages:
   - virt-viewer
   - libguestfs-tools
   - vagrant-libvirt 
-  - dnf-plugins-core
-  - neomutt
-  - nmap-ncat
-  - isync
-  - openssh-server
   - systemd-container
-  - git
-  - file
-  - patchutils
-  - mono-devel
-  - make
-  - strace
-  - wget
-  - cockpit-system
-  - cockpit-ws
-  - syncthing
-  - krb5-workstation
-  - tar
-  - time
-  - which
-  - wireless-tools
-  - inotify-tools
-  - words
-  - chrony
-  - jq
-  - xkill 
-
-# desktop plumbing/apps
-  - dejavu-sans-fonts
-  - dejavu-serif-fonts
-  - dejavu-sans-mono-fonts
-  - fira-code-fonts
-  - google-noto-emoji-color-fonts
-  - powerline
-  - powerline-fonts
-  - papirus-icon-theme
-
-  - gvfs-mtp
-  - pulseaudio-utils
-  - alsa-plugins-pulseaudio
-  - gstreamer1-plugins-good
-  - gstreamer1-plugins-ugly
-  - gstreamer1-libav
-  - ffmpeg-libs
-  # for wf-recorder
-  - libavdevice
+  # Flatpak 
   - xdg-desktop-portal 
   - xdg-desktop-portal-gtk
-  - pavucontrol
-  - pipewire-alsa
-  - pipewire-gstreamer
-  - pipewire-pulseaudio
-  - pipewire-utils
-  - redshift
-  - brightnessctl
-  - playerctl
-  - ncmpcpp 
-  - mpd
-  - simple-scan
-  - alacritty
-  - starship
-  - firefox
-  - thunderbird
-  - remmina
-  - remmina-plugins-spice
-  - google-chrome-stable 
-  - code
-  - pinentry-gnome3
+# Webcam (logitech c920)
+  - v4l-utils
+  - v4l2ucp
+# x11
+  - dbus-x11
   - lxpolkit
   - lxrandr
   - lxappearance
-  - libappindicator-gtk3
-  - libappindicator-sharp
-  - gnome-disk-utility
-  - gnome-keyring
-  - duplicati
-
-# x11
   - glx-utils
   - mesa-dri-drivers
   - mesa-vulkan-drivers
@@ -218,19 +237,9 @@ packages:
   - xorg-x11-xinit
   - xorg-x11-drv-nvidia
   - xorg-x11-drv-nvidia-cuda
-# i3 
-  - i3-gaps
-  - i3lock
-  - i3status
-  - i3blocks
-  - polybar
-  - rofi
-  - dunst
-  - feh
-  - scrot
-  - picom  
-  - flameshot
-
+  - xkill 
+  - xsetroot
+  
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
 

@@ -1,25 +1,3 @@
-[copr:copr.fedorainfracloud.org:vladius:i3blocks]
-name=Copr repo for i3blocks owned by vladius
-baseurl=https://download.copr.fedorainfracloud.org/results/vladius/i3blocks/fedora-34-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/vladius/i3blocks/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-
-[copr:copr.fedorainfracloud.org:flatcap:neomutt]
-name=Copr repo for neomutt owned by flatcap
-baseurl=https://download.copr.fedorainfracloud.org/results/flatcap/neomutt/fedora-34-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/flatcap/neomutt/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-
 [copr:copr.fedorainfracloud.org:momosomium:fontawesome5]
 name=Copr repo for fontawesome5 owned by momosomium
 baseurl=https://download.copr.fedorainfracloud.org/results/momosomium/fontawesome5/fedora-34-$basearch/
