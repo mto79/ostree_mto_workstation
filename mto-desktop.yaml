@@ -169,7 +169,9 @@ packages:
   - papirus-icon-theme
 # Tool
   - bc 
+  - butane
   - chrony
+  - coreos-installer  
   - dnf-plugins-core
   - git
   - gmp
