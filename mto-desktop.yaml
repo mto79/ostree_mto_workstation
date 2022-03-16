@@ -65,6 +65,7 @@ packages:
   - nss-altfiles
   - ntfs-3g
   - ntfsprogs
+  - rsync
   - tree
   - udisks2-lvm2
   - syncthing
@@ -97,6 +98,8 @@ packages:
   - picom  
   - flameshot
   - redshift
+# Image
+  - imlib2
 # IO Devices
   - pciutils
   - usbutils
@@ -182,12 +185,18 @@ packages:
   - jq
   - libappindicator-gtk3
   - libappindicator-sharp
+  - libimobiledevice
+  - libimobiledevice-devel
+  - libimobiledevice-utils
+  - libplist
+  - libplist-python
   - man-db
   - mono-devel
   - make
   - patchutils
   - pinentry-gnome3
   - time
+  - usbmuxd
   - wget
   - which
   - words
