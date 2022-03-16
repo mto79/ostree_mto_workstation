@@ -58,6 +58,7 @@ packages:
   - cryptsetup
   - file
   - filesystem
+  - ifuse
   - inotify-tools
   - lsof
   - nfs-utils

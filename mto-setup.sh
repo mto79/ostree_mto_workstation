@@ -50,7 +50,8 @@ flatpak install flathub org.jitsi.jitsi-meet -y
 flatpak install flathub com.mattermost.Desktop -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub org.libreoffice.LibreOffice -y 
-  
+flatpak install flathub org.gnome.Shotwell -y
+
 echo "Libvirt: Prevenpassword prompts for each and every libvirt action, install the following polkit rule."
 echo "-----------------------"
 
