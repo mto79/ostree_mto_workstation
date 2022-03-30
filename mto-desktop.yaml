@@ -7,251 +7,135 @@ rojig:
   license: MIT
 
 repos:
-  - code
-  - fedora-34
-  - fedora-34-updates
-  - fedora-34-updates-testing
-  - gitlab.com_samuel-w_repo
-  - google-chrome
+  - fedora-36
+  - fedora-36-updates
+  - fedora-36-updates-testing
   - rpmfusion-free
   - rpmfusion-free-updates
-  - rpmfusion-nonfree
-  - rpmfusion-nonfree-updates
-  - rpmsphere
-  
+
 packages:
-# Backup/Restore  
-  - duplicati
-# Base
-  - basesystem
+# hardware/drivers
   - kernel
   - kernel-modules-extra
+  - iwl6000g2a-firmware
+  - iwl7260-firmware
+  - alsa-sof-firmware
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - powertop
+  - iwd
+  - wpa_supplicant
+  - opensc
+# basic system
+  - acl
+  - attr
+  - basesystem
+  - cryptsetup
+  - dnsmasq
+  - fedora-workstation-backgrounds
+  - filesystem
+  - glibc-langpack-de
   - glibc-langpack-en
-# Bluetooth
-  - blueman
-  - bluez 
-  - bluez-tools
-# Browser
-  - firefox
-  - google-chrome-stable 
-# Cockpit  
-  - cockpit-system
-  - cockpit-ws
-  - cockpit-machines
-# Compression
+  - hostname
+  - iproute
+  - kbd
+  - nss-altfiles
+  - pciutils
+  # don't care, but rpm-ostree build fails otherwise
+  - selinux-policy-targeted
+  - sudo
+  - usbutils
+# shell tools and development
+  - bc
+  - gnupg2
+  - fpaste
+  - lsof
+  - man-db
+  - mtr
+  - tree
   - bzip2
   - zip
   - unzip
-  - tar
-# Connection  
-  - openssh-server
-  - remmina
-  - remmina-plugins-spice
-# Editing
-  - code
-  - neovim 
-  - python3-neovim
-# Filesystem
-  - acl
-  - attr
-  - cifs-utils
-  - cryptsetup
-  - file
-  - filesystem
-  - ifuse
-  - inotify-tools
-  - lsof
-  - nfs-utils
-  - nss-altfiles
-  - ntfs-3g
-  - ntfsprogs
-  - rsync
-  - tree
-  - udisks2-lvm2
-  - syncthing
-# Fingerprint
-  - fprintd
-  - fprintd-pam
-# Fonts
-  - dejavu-sans-fonts
-  - dejavu-serif-fonts
-  - dejavu-sans-mono-fonts
-  - fira-code-fonts
-  - google-noto-emoji-color-fonts
-  - powerline
-  - powerline-fonts
-# Firmware/Hardware Monitoring
-  - fwupd 
-  - lm_sensors
-  - lshw 
-  - powertop
-  - strace
-# I3 
-  - i3-gaps
-  - i3lock
-  - i3status
-  - polybar
-  - rofi
-  - dunst
-  - feh
-  - scrot
-  - picom  
-  - flameshot
-  - redshift
-# Image
-  - imlib2
-# IO Devices
-  - pciutils
-  - usbutils
-# Keyboard
-  - kbd
-# Mail
-  - isync
-  - thunderbird
-# Network
-  - ethtool
-  - dnsmasq
-  - hostname
-  - iproute
-  - iwl6000g2a-firmware
-  - iwl7260-firmware
-  - iwd
-  - NetworkManager 
-  - NetworkManager-wifi
-  - NetworkManager-openvpn-gnome
-  - NetworkManager-bluetooth
-  - NetworkManager-wwan
-  - network-manager-applet
-  - net-tools
-  - nmap-ncat
-  - nm-connection-editor
-  - mtr
-  - openvpn 
-  - wireless-tools
-  - wpa_supplicant
-# Nvidia
-  - akmod-nvidia
-# Printer/Scanner (hp officejet 250 mobile)
-  - hplip
-  - hplip-gui
-  - sane-backends
-  - sane-backends-drivers-scanners
-  - simple-scan
-# Smartcard 
-  - opensc
-# Sound  
-  - alsa-plugins-pulseaudio
-  - alsa-sof-firmware
-  - gvfs-mtp
-  - pulseaudio-utils
-  - gstreamer1-plugins-good
-  - gstreamer1-plugins-ugly
-  - gstreamer1-libav
-  - ffmpeg-libs
-  - libavdevice
-  - pavucontrol
-  - pipewire-alsa
-  - pipewire-gstreamer
-  - pipewire-pulseaudio
-  - pipewire-utils
-  - mpd
-  - playerctl
-  - ncmpcpp 
-# Security
-  - gnupg2
-  - kpcli
-  - krb5-workstation
-  - pass
-  - selinux-policy-targeted
-  - sudo
-# Terminal
-  - alacritty
+  - vim-enhanced
+  - ranger
   - bash-completion
   - fish
-  - starship
-# Theming/Icon
-  - papirus-icon-theme
-# Tool
-  - bc 
-  - butane
-  - chrony
-  - coreos-installer  
-  - dnf-plugins-core
-  - git
-  - gmp
-  - gnome-disk-utility
-  - gnome-keyring
-  - hugo
-  - jq
-  - libappindicator-gtk3
-  - libappindicator-sharp
-  - libimobiledevice
-  - libimobiledevice-devel
-  - libimobiledevice-utils
-  - libplist
-  - libplist-python
-  - man-db
-  - mono-devel
-  - make
-  - patchutils
-  - pinentry-gnome3
-  - time
-  - usbmuxd
-  - wget
-  - which
-  - words
-# Virtualization
   - qemu-system-x86-core
   - qemu-ui-sdl
   - qemu-img
-  - qemu-guest-agent
-  - spice-vdagent
-  - qemu-kvm
-  - libvirt 
-  - virt-install
-  - virt-manager
-  - virt-top 
-  - virt-viewer
-  - libguestfs-tools
-  - vagrant-libvirt 
+  - openvpn
+  - nmap-ncat
+  - isync
+  - duplicity
+  - openssh-server
   - systemd-container
-  # Flatpak 
-  - xdg-desktop-portal 
+  - git
+  - patchutils
+  - make
+  - strace
+  - wget
+  - w3m
+  - cockpit-system
+  - cockpit-ws
+  - syncthing
+  - krb5-workstation
+
+# desktop plumbing/apps
+  - dejavu-sans-fonts
+  - dejavu-serif-fonts
+  - dejavu-sans-mono-fonts
+  - fontawesome-fonts
+  - google-noto-emoji-color-fonts
+
+  - gvfs-mtp
+  - pulseaudio-utils
+  - alsa-plugins-pulseaudio
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-ugly
+  - gstreamer1-libav
+  # for wf-recorder
+  - libavdevice
   - xdg-desktop-portal-gtk
-# Webcam (logitech c920)
-  - v4l-utils
-  - v4l2ucp
-# x11
-  - dbus-x11
+
+  - pavucontrol
+  - pcmanfm
+  - simple-scan
+  - nm-connection-editor
+  - eog
+  - evince
+  - gnome-keyring
+  - pinentry-gnome3
   - lxpolkit
-  - lxrandr
-  - lxappearance
-  - glx-utils
-  - mesa-dri-drivers
-  - mesa-vulkan-drivers
-  - plymouth-system-theme
-  # - xorg-x11-drv-armsoc
-  # - xorg-x11-drv-ati
-  - xorg-x11-drv-evdev
-  - xorg-x11-drv-fbdev
-  - xorg-x11-drv-intel
-  - xorg-x11-drv-libinput
-  # - xorg-x11-drv-nouveau
-  # - xorg-x11-drv-omap
-  - xorg-x11-drv-openchrome
-  - xorg-x11-drv-qxl
-  - xorg-x11-drv-vesa
-  # - xorg-x11-drv-vmware
-  # - xorg-x11-drv-wacom
-  - xorg-x11-server-Xorg
-  - xorg-x11-utils
-  - xorg-x11-xauth
-  - xorg-x11-xinit
-  - xorg-x11-drv-nvidia
-  - xorg-x11-drv-nvidia-cuda
-  - xkill 
-  - xsetroot
-  
+  - lxterminal
+  - gnome-disk-utility
+  - gtimelog
+  - rofimoji
+
+# sway/wayland desktop
+  - sway
+  - swayidle
+  - swaylock
+  - kanshi
+  - mako
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - firefox-wayland
+  - wofi
+  - brightnessctl
+  - wl-clipboard
+
+exclude-packages:
+  # recommended by sway
+  - alacritty
+  - brltty
+  - glibc-all-langpacks
+  # recommended by gtimelog
+  - yelp
+
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
 

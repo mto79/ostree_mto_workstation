@@ -5,8 +5,7 @@ packages:
   - NetworkManager-config-connectivity-fedora
   - NetworkManager-wifi
   - NetworkManager-wwan
-  - aajohan-comfortaa-fonts
-  - abattis-cantarell-fonts
+  - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
   - alsa-sof-firmware
@@ -36,9 +35,8 @@ packages:
   - cups-filters
   - curl
   - cyrus-sasl-plain
-  - dejavu-sans-fonts
+  - default-editor
   - dejavu-sans-mono-fonts
-  - dejavu-serif-fonts
   - dhcp-client
   - dnsmasq
   - e2fsprogs
@@ -52,8 +50,6 @@ packages:
   - filesystem
   - firefox
   - firewalld
-  - foomatic
-  - foomatic-db-ppds
   - fpaste
   - fros-gnome
   - gamemode
@@ -62,9 +58,22 @@ packages:
   - glx-utils
   - gnupg2
   - google-noto-emoji-color-fonts
+  - google-noto-sans-arabic-vf-fonts
+  - google-noto-sans-armenian-vf-fonts
+  - google-noto-sans-canadian-aboriginal-vf-fonts
+  - google-noto-sans-cherokee-vf-fonts
   - google-noto-sans-cjk-ttc-fonts
-  - google-noto-sans-gurmukhi-fonts
+  - google-noto-sans-ethiopic-vf-fonts
+  - google-noto-sans-georgian-vf-fonts
+  - google-noto-sans-gurmukhi-vf-fonts
+  - google-noto-sans-hebrew-vf-fonts
+  - google-noto-sans-lao-vf-fonts
+  - google-noto-sans-math-vf-fonts
+  - google-noto-sans-mono-vf-fonts
   - google-noto-sans-sinhala-vf-fonts
+  - google-noto-sans-thaana-vf-fonts
+  - google-noto-sans-vf-fonts
+  - google-noto-serif-vf-fonts
   - gstreamer1-plugins-bad-free
   - gstreamer1-plugins-good
   - gstreamer1-plugins-ugly-free
@@ -81,11 +90,9 @@ packages:
   - ibus-m17n
   - ibus-typing-booster
   - iproute
-  - iptables
+  - iptables-nft
   - iptstate
   - iputils
-  - ipw2100-firmware
-  - ipw2200-firmware
   - iwl100-firmware
   - iwl1000-firmware
   - iwl105-firmware
@@ -102,8 +109,8 @@ packages:
   - iwl6000g2b-firmware
   - iwl6050-firmware
   - iwl7260-firmware
+  - iwlax2xx-firmware
   - jomolhari-fonts
-  - julietaula-montserrat-fonts
   - kbd
   - kernel
   - kernel-modules-extra
@@ -133,11 +140,8 @@ packages:
   - mdadm
   - mesa-dri-drivers
   - mesa-vulkan-drivers
-  - mlocate
   - mpage
   - mtr
-  - nano
-  - nano-default-editor
   - nfs-utils
   - nss-altfiles
   - nss-mdns
@@ -157,13 +161,13 @@ packages:
   - pipewire-gstreamer
   - pipewire-pulseaudio
   - pipewire-utils
+  - plocate
   - plymouth
   - plymouth-system-theme
   - policycoreutils
   - policycoreutils-python-utils
   - procps-ng
   - psmisc
-  - pt-sans-fonts
   - qemu-guest-agent
   - qt5-qtbase
   - qt5-qtbase-gui
@@ -171,6 +175,7 @@ packages:
   - qt5-qtxmlpatterns
   - quota
   - realmd
+  - rit-meera-new-fonts
   - rootfiles
   - rpm
   - rsync
@@ -178,11 +183,9 @@ packages:
   - selinux-policy-targeted
   - setup
   - shadow-utils
-  - sil-abyssinica-fonts
   - sil-mingzat-fonts
   - sil-nuosu-fonts
   - sil-padauk-fonts
-  - smc-meera-fonts
   - sos
   - spice-vdagent
   - sssd
@@ -193,6 +196,7 @@ packages:
   - system-config-printer-udev
   - systemd
   - systemd-oomd-defaults
+  - systemd-resolved
   - systemd-udev
   - tar
   - thai-scalable-waree-fonts
@@ -206,7 +210,9 @@ packages:
   - vim-minimal
   - wget
   - which
+  - wireplumber
   - words
+  - wpa_supplicant
   - xorg-x11-drv-amdgpu
   - xorg-x11-drv-ati
   - xorg-x11-drv-evdev
@@ -216,7 +222,6 @@ packages:
   - xorg-x11-drv-qxl
   - xorg-x11-drv-wacom
   - xorg-x11-server-Xorg
-  - xorg-x11-utils
   - xorg-x11-xauth
   - xorg-x11-xinit
   - zd1211-firmware
