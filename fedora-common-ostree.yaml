@@ -1,3 +1,4 @@
+---
 ref: fedora/40/${basearch}/ostree-base
 
 automatic_version_prefix: "40"
@@ -113,3 +114,5 @@ postprocess:
     rm -rf /etc/systemd/user/*
     systemctl --user --global preset-all
 postprocess-script: "postprocess.sh"
+
+...
