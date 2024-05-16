@@ -8,251 +8,157 @@ rojig:
 
 repos:
   - code
-  - fedora-34
-  - fedora-34-updates
-  - fedora-34-updates-testing
-  - gitlab.com_samuel-w_repo
-  - google-chrome
+  - fedora-40
+  - fedora-40-updates
+  - fedora-40-updates-testing
+  - fedora-cisco-openh264
   - rpmfusion-free
   - rpmfusion-free-updates
-  - rpmfusion-nonfree
-  - rpmfusion-nonfree-updates
-  - rpmsphere
   
 packages:
-# Backup/Restore  
-  - duplicati
-# Base
-  - basesystem
+# hardware/drivers
   - kernel
   - kernel-modules-extra
-  - glibc-langpack-en
-# Bluetooth
-  - blueman
-  - bluez 
-  - bluez-tools
-# Browser
-  - firefox
-  - google-chrome-stable 
-# Cockpit  
-  - cockpit-system
-  - cockpit-ws
-  - cockpit-machines
-# Compression
-  - bzip2
-  - zip
-  - unzip
-  - tar
-# Connection  
-  - openssh-server
-  - remmina
-  - remmina-plugins-spice
-# Editing
-  - code
-  - neovim 
-  - python3-neovim
-# Filesystem
+  - iwlwifi-mvm-firmware
+  - alsa-sof-firmware
+  - NetworkManager-wifi
+  - NetworkManager-openvpn-gnome
+  - powertop
+  - wpa_supplicant
+# basic system
   - acl
   - attr
-  - cifs-utils
+  - basesystem
   - cryptsetup
-  - file
+  - dnsmasq
+  - fedora-workstation-backgrounds
   - filesystem
-  - ifuse
-  - inotify-tools
-  - lsof
-  - nfs-utils
+  - glibc-langpack-en
+  - hostname
+  - iproute
+  - kbd
   - nss-altfiles
-  - ntfs-3g
-  - ntfsprogs
+  - pciutils
+  # don't care, but rpm-ostree build fails otherwise
+  - selinux-policy-targeted
+  - sudo
+  - usbutils
+# shell tools and development
+  - bash-completion
+  - bc
+  - bzip2
+  - cockpit-system
+  - cockpit-ws
+  - curl
+  # authenticate to gmail
+  - cyrus-sasl-plain
+  - fpaste
+  - git
+  - gnupg2
+  - gvfs
+  - gvfs-mtp
+  - isync
+  - krb5-workstation
+  - lsof
+  - man-db
+  - mtr
+  - neovim
+  - nmap-ncat
+  - openssh-server
+  - openssl
+  - openvpn
+  - restic
   - rsync
-  - tree
-  - udisks2-lvm2
+  - strace
   - syncthing
-# Fingerprint
-  - fprintd
-  - fprintd-pam
-# Fonts
+  - systemd-container
+  - tree
+  - w3m
+  - wget
+  - xdg-user-dirs
+  - xdg-utils
+
+# desktop plumbing/apps
   - dejavu-sans-fonts
   - dejavu-serif-fonts
   - dejavu-sans-mono-fonts
-  - fira-code-fonts
+  - fontawesome-fonts
   - google-noto-emoji-color-fonts
-  - powerline
-  - powerline-fonts
-# Firmware/Hardware Monitoring
-  - fwupd 
-  - lm_sensors
-  - lshw 
-  - powertop
-  - strace
-# I3 
-  - i3-gaps
-  - i3lock
-  - i3status
-  - polybar
-  - rofi
-  - dunst
-  - feh
-  - scrot
-  - picom  
-  - flameshot
-  - redshift
-# Image
-  - imlib2
-# IO Devices
-  - pciutils
-  - usbutils
-# Keyboard
-  - kbd
-# Mail
-  - isync
-  - thunderbird
-# Network
-  - ethtool
-  - dnsmasq
-  - hostname
-  - iproute
-  - iwl6000g2a-firmware
-  - iwl7260-firmware
-  - iwd
-  - NetworkManager 
-  - NetworkManager-wifi
-  - NetworkManager-openvpn-gnome
-  - NetworkManager-bluetooth
-  - NetworkManager-wwan
-  - network-manager-applet
-  - net-tools
-  - nmap-ncat
-  - nm-connection-editor
-  - mtr
-  - openvpn 
-  - wireless-tools
-  - wpa_supplicant
-# Nvidia
-  - akmod-nvidia
-# Printer/Scanner (hp officejet 250 mobile)
-  - hplip
-  - hplip-gui
-  - sane-backends
-  - sane-backends-drivers-scanners
-  - simple-scan
-# Smartcard 
-  - opensc
-# Sound  
-  - alsa-plugins-pulseaudio
-  - alsa-sof-firmware
+
   - gvfs-mtp
   - pulseaudio-utils
+  - alsa-plugins-pulseaudio
   - gstreamer1-plugins-good
-  - gstreamer1-plugins-ugly
+  - gstreamer1-plugins-bad-free
+  - gstreamer1-plugin-openh264
   - gstreamer1-libav
-  - ffmpeg-libs
-  - libavdevice
-  - pavucontrol
-  - pipewire-alsa
-  - pipewire-gstreamer
-  - pipewire-pulseaudio
-  - pipewire-utils
-  - mpd
-  - playerctl
-  - ncmpcpp 
-# Security
-  - gnupg2
-  - kpcli
-  - krb5-workstation
-  - pass
-  - selinux-policy-targeted
-  - sudo
-# Terminal
-  - alacritty
-  - bash-completion
-  - fish
-  - starship
-# Theming/Icon
-  - papirus-icon-theme
-# Tool
-  - bc 
-  - butane
-  - chrony
-  - coreos-installer  
-  - dnf-plugins-core
-  - git
-  - gmp
-  - gnome-disk-utility
-  - gnome-keyring
-  - hugo
-  - jq
-  - libappindicator-gtk3
-  - libappindicator-sharp
-  - libimobiledevice
-  - libimobiledevice-devel
-  - libimobiledevice-utils
-  - libplist
-  - libplist-python
-  - man-db
-  - mono-devel
-  - make
-  - patchutils
-  - pinentry-gnome3
-  - time
-  - usbmuxd
-  - wget
-  - which
-  - words
-# Virtualization
-  - qemu-system-x86-core
-  - qemu-ui-sdl
-  - qemu-img
-  - qemu-guest-agent
-  - spice-vdagent
-  - qemu-kvm
-  - libvirt 
-  - virt-install
-  - virt-manager
-  - virt-top 
-  - virt-viewer
-  - libguestfs-tools
-  - vagrant-libvirt 
-  - systemd-container
-  # Flatpak 
-  - xdg-desktop-portal 
+  # for wf-recorder
+  # - libavdevice
   - xdg-desktop-portal-gtk
-# Webcam (logitech c920)
-  - v4l-utils
-  - v4l2ucp
-# x11
-  - dbus-x11
-  - lxpolkit
-  - lxrandr
-  - lxappearance
-  - glx-utils
-  - mesa-dri-drivers
-  - mesa-vulkan-drivers
-  - plymouth-system-theme
-  # - xorg-x11-drv-armsoc
-  # - xorg-x11-drv-ati
-  - xorg-x11-drv-evdev
-  - xorg-x11-drv-fbdev
-  - xorg-x11-drv-intel
-  - xorg-x11-drv-libinput
-  # - xorg-x11-drv-nouveau
-  # - xorg-x11-drv-omap
-  - xorg-x11-drv-openchrome
-  - xorg-x11-drv-qxl
-  - xorg-x11-drv-vesa
-  # - xorg-x11-drv-vmware
-  # - xorg-x11-drv-wacom
-  - xorg-x11-server-Xorg
-  - xorg-x11-utils
-  - xorg-x11-xauth
-  - xorg-x11-xinit
-  - xorg-x11-drv-nvidia
-  - xorg-x11-drv-nvidia-cuda
-  - xkill 
-  - xsetroot
+
+  - pavucontrol
+  - pcmanfm
+  - nm-connection-editor
+  - eog
+  - evince
+  - pipewire
+  - wireplumber
+  # bluetooth
+  - bluez
+  - bluez-tools
+  - blueman
+  - python3-cairo
+  # thunar
+  - ffmpegthumbnailer
+  - thunar 
+  - thunar-volman 
+  - tumbler 
+  - thunar-archive-plugin
+  - file-roller
+  - gnome-keyring
+  - pinentry-gnome3
+  - polkit-kde-agent
+  - lxterminal
+  - gnome-disk-utility
+
+# hyprland/wayland desktop
+  - hyprland
+  - hyprland-devel
+  - hyprcursor
+  - qt5-wayland
+  - qt6-wayland
+  - dunst
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - firefox-wayland
+  - wofi
+  - brightnessctl
+  - wl-clipboard
+
+exclude-packages:
+  - brltty
+  - glibc-all-langpacks
+  # recommended by gtk3
+  - tracker
+  - tracker-miners
+  # recommended by toolbox
+  - subscription-manager
+  # recommended by udisks
+  - exfatprogs
+  - f2fs-tools
+  - btrfs-progs
+  - nilfs-utils
+  - udftools
+  # does not work
+  - xdg-desktop-portal-wlr
+  - xdg-desktop-portal-lxqt
+  # recommended by containers-common-extra
+  - qemu-user-static
   
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
+  - ["2022-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2022-RH-IT-Root-CA.pem"]
 
 postprocess-script: mto-post.sh
